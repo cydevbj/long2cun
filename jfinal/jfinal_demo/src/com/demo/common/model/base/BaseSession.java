@@ -36,24 +36,6 @@ public abstract class BaseSession<M extends BaseSession<M>> extends Model<M> imp
 		return get("userid");
 	}
 
-	public M setCreatetime(java.util.Date createtime) {
-		set("createtime", createtime);
-		return (M)this;
-	}
-
-	public java.util.Date getCreatetime() {
-		return get("createtime");
-	}
-
-	public M setExpiretime(java.util.Date expiretime) {
-		set("expiretime", expiretime);
-		return (M)this;
-	}
-
-	public java.util.Date getExpiretime() {
-		return get("expiretime");
-	}
-
 	public M setOauthtype(java.lang.String oauthtype) {
 		set("oauthtype", oauthtype);
 		return (M)this;
@@ -70,6 +52,24 @@ public abstract class BaseSession<M extends BaseSession<M>> extends Model<M> imp
 
 	public java.lang.Integer getActive() {
 		return get("active");
+	}
+
+	public M setExpiretime(java.util.Date expiretime) {
+		set("expiretime", expiretime);
+		return (M)this;
+	}
+
+	public java.util.Date getExpiretime() {
+		return get("expiretime");
+	}
+
+	public M setCreatetime(java.util.Date createtime) {
+		set("createtime", createtime);
+		return (M)this;
+	}
+
+	public java.util.Date getCreatetime() {
+		return get("createtime");
 	}
 
 	public M setUpdatetime(java.util.Date updatetime) {

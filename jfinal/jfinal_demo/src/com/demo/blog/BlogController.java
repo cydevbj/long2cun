@@ -79,13 +79,12 @@ public class BlogController extends Controller {
 		String time = getPara("time");
 		try {
 			Date datetime = new java.text.SimpleDateFormat("yyyy-MM-dd hh:mm:ss").parse(time.trim());
-			b.setTime(datetime);
+			b.setCreatetime(datetime);
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		b.setUsrname(getPara("usrname"));
 		b.save();
 		if(null != files){
 			for (int i = 0; i < files.size(); i++) {
@@ -95,7 +94,7 @@ public class BlogController extends Controller {
 				String url = FileUtil.instance.changeFileName(uploadFile.getUploadPath(), uploadFile.getFileName());
 				image.setPath(url);
 				image.setType(uploadFile.getContentType());
-				image.setIdx(i);
+				image.setPosition(i);
 				image.save();
 			}
 		}

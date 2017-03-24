@@ -63,22 +63,31 @@ public abstract class BaseBlog<M extends BaseBlog<M>> extends Model<M> implement
 		return get("usrid");
 	}
 
-	public M setUsrname(java.lang.String usrname) {
-		set("usrname", usrname);
+	public M setCreatetime(java.util.Date createtime) {
+		set("createtime", createtime);
 		return (M)this;
 	}
 
-	public java.lang.String getUsrname() {
-		return get("usrname");
+	public java.util.Date getCreatetime() {
+		return get("createtime");
 	}
 
-	public M setTime(java.util.Date time) {
-		set("time", time);
+	public M setUpdatetime(java.util.Date updatetime) {
+		set("updatetime", updatetime);
 		return (M)this;
 	}
 
-	public java.util.Date getTime() {
-		return get("time");
+	public java.util.Date getUpdatetime() {
+		return get("updatetime");
+	}
+
+	public M setDiscard(java.lang.Integer discard) {
+		set("discard", discard);
+		return (M)this;
+	}
+
+	public java.lang.Integer getDiscard() {
+		return get("discard");
 	}
 
 }

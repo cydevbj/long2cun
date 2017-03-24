@@ -1,4 +1,4 @@
-jdbcUrl = jdbc:mysql://localhost/jfinal_wz369?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
-user = root
-password =
+jdbcUrl = jdbc:mysql://localhost/my24dwz369?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+user = wzadmin
+password = wz369wz
 devMode = true
