@@ -6,7 +6,7 @@ import com.jfinal.kit.PathKit;
 import com.jfinal.kit.PropKit;
 import com.jfinal.plugin.activerecord.generator.Generator;
 import com.jfinal.plugin.druid.DruidPlugin;
-import com.my24d.caixun.common.CaixunConfig;
+import com.my24d.caixun.CaixunConfig;
 
 /**
  * 本 demo 仅表达最为粗浅的 jfinal 用法，更为有价值的实用的企业级用法
@@ -14,7 +14,7 @@ import com.my24d.caixun.common.CaixunConfig;
  * 
  * 在数据库表有任何变动时，运行一下 main 方法，极速响应变化进行代码重构
  */
-public class _JFinalDemoGenerator {
+public class _JFinalCaixunGenerator {
 	
 	public static DataSource getDataSource() {
 		PropKit.use("a_little_config.txt");

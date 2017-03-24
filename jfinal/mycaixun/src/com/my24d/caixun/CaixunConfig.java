@@ -1,4 +1,4 @@
-package com.my24d.caixun.common;
+package com.my24d.caixun;
 
 import com.jfinal.config.Constants;
 import com.jfinal.config.Handlers;
